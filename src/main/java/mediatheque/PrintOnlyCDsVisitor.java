@@ -10,4 +10,9 @@ public class PrintOnlyCDsVisitor implements Visitor {
     public void visitCD(CD cd) {
         System.out.println(cd);
     }
+
+    @Override
+    public void visitMovie(Movie movie) {
+        // ne rien faire
+    }   
 }

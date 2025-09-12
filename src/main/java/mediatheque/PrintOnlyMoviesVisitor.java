@@ -1,18 +1,19 @@
 package mediatheque;
 
-public class PrintCatalogVisitor implements Visitor {
+public class PrintOnlyMoviesVisitor implements Visitor {
+
     @Override
     public void visitBook(Book book) {
-        System.out.println(book);
+        // Ne rien faire pour les livres
     }
 
     @Override
     public void visitCD(CD cd) {
-        System.out.println(cd);
+        // Ne rien faire pour les CDs
     }
 
     @Override
     public void visitMovie(Movie movie) {
-        System.out.println(movie);
+        movie.print();
     }
 }

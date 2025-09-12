@@ -10,4 +10,9 @@ public class PrintOnlyBooksVisitor implements Visitor {
     public void visitCD(CD cd) {
         // ne rien faire
     }
+
+    @Override
+    public void visitMovie(Movie movie) {
+        // ne rien faire
+    }
 }
